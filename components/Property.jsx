@@ -24,7 +24,7 @@ const Property = ({ property: { externalID, coverPhoto, price, rentFrequency, ro
                     <Avatar size="sm" src={agency?.logo?.url} />
                 </Flex>
                 <Flex alignItems={"center"} p="1" justifyContent={"space-between"} w="250px" color="blue.400">
-                    {rooms} <FaBed /> |{baths} <FaBath /> | {millify(area)} sqft
+                    {rooms}<FaBed /> | {baths}<FaBath /> | {millify(area)} sqft
                 </Flex>
                 <Text fontSize="lg">{title.length > 30 ? `${title.substring(0, 30)}...` : title}</Text>
             </Box>
